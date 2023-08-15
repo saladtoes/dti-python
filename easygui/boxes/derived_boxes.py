@@ -249,7 +249,7 @@ def convert_to_type(input_value, new_type, input_value_name=None):
 # integerbox
 # -------------------------------------------------------------------
 def integerbox(msg="", title=" ", default=None,
-               lowerbound=0, upperbound=99, image=None, root=None):
+               lowerbound=0, upperbound=10000000000000, image=None, root=None):
     """
     Show a box in which a user can enter an integer.
 
