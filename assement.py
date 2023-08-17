@@ -23,7 +23,7 @@ question5Answers = [' A: “We shouldn’t be mean to them just because they’r
 questions = ["Someone sends you a text that is hurtful and makes you feel bad about yourself. What should you do?\n", "You find out that someone has posted an embarrassing picture of you online. What should you do?", "You want to join an online gaming site. Which of the following information is okay for you to post on the site.", "Someone in your class has posted their first video on YouTube and has asked you to comment on it. You don’t think the video is good because the editing is very choppy. What could you comment?", "Someone in your class is a real bully. Some of the other people in your class say: “Let’s get them back, and spam them with random texts.” What do you reply?"]
 global score
 score = 0
-
+question1count = 0
 question2count = 0
 
 def question1():
