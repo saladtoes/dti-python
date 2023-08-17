@@ -1,6 +1,3 @@
-from timeit import repeat
-from tkinter import scrolledtext
-
 
 name = input("What is your name?: ")
 age = int(input("Hello " + name + " how old are you?: "))
@@ -25,19 +22,31 @@ global score
 score = 0
 question1count = 0
 question2count = 0
+question3count = 0
+question4count = 0
+question5count = 0
+question1countright = 0
+question2countright = 0
+question3countright = 0
+question4countright = 0
+question5countright = 0
 
 def question1():
     global score
-    global question1count
+    global question1countwrong
+    global question1countright
+    question1countright = 0
     question1count = 0
-while question1count != 3:
+while question1count != 3 or question1countright >= 1:
     print(questions[0])
     print(question1Answers[0], question1Answers[1], question1Answers[2])
     q1 = input("Answer Now: ")
     if q1 == answers[1]:
         print("that is correct\n")
         score += 1
-        pass
+        question1countright += 1
+        break
+    
     elif q1 != answers[1]:
         print("That was wrong")
         question1count += 1
@@ -46,27 +55,91 @@ while question1count != 3:
 def question2():
     global score
     global question2count
+    global question2countright
+    question2countright = 0    
     question2count = 0
-while question2count != 3:
-    print(questions[0])
+while question2count != 3 or question2countright >= 1:
+    print(questions[1])
     print(question2Answers[0], question2Answers[1], question2Answers[2])
     q2 = input("Answer Now: ")
     if q2 == answers[2]:
         print("that is correct\n")
         score += 1
-        exit
+        question2countright += 1
+        break
     elif q2 != answers[2]:
         print("That was wrong")
         question2count += 1
         pass
 
-    
-    
+def question3():
+    global score
+    global question3count
+    global question3countright
+    question3countright = 0
+    question3count = 0
+while question3count != 3 or question3countright >= 1:
+    print(questions[2])
+    print(question3Answers[0], question3Answers[1], question2Answers[2])
+    q3 = input("Answer Now: ")
+    if q3 == answers[0]:
+        print("that is correct\n")
+        score += 1
+        question3countright += 1
+        break
+    elif q3 != answers[0]:
+        print("That was wrong")
+        question3count += 1
+        pass
+
+def question4():
+    global score
+    global question4count
+    global question4countright
+    question4countright = 0
+    question4count = 0
+while question4count != 3 or question4countright >= 1:
+    print(questions[3])
+    print(question4Answers[0], question4Answers[1], question4Answers[2])
+    q4 = input("Answer now: ")
+    if q4 == answers[2]:
+        print("That was correct\n")
+        score += 1
+        question4countright += 1
+        break
+    elif q4 != answers[2]:
+        print("That was wrong\n")
+        question4count += 1
+        pass
+
+def question5():
+    global score
+    global question5count
+    global question5countright
+    question5countright = 0
+    question5count = 0
+while question4count != 3 or question5countright >= 1:
+    print(questions[4])  
+    print(question5Answers[0], question5Answers[1], question5Answers[2])
+    q5 = input("Answer now: ")
+    if q5 == answers[0]:
+        print("That was correct\n")
+        score += 1
+        question5countright += 1
+        break
+    elif q5 != answers[0]:
+        print("That was wrong\n")
+        question5count += 1
+        pass
 
 
 question1()
 question2()
+question3()
+question4()
+question5()
 
+print("Your score is", score, "out of 5")
 
 
 
