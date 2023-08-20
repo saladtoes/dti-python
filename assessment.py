@@ -23,7 +23,7 @@ question1count, question2count,question3count,question4count, question5count = 0
 question1countright, question2countright, question3countright, question4countright, question5countright = 0
 
 def question1():
-    global score, question1countwrong, question1countright
+    global score, question1count, question1countright
     question1countright = 0
     question1count = 0
 while question1count != 3 or question1countright >= 1:
