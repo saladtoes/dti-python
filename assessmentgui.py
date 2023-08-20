@@ -8,7 +8,7 @@ elif age >= 14:
     easygui.msgbox("Your above the recommended age for this quiz.\nPlease try the Cybersmath Youth quiz instead")
     pass
 else:
-    easygui.msgbox("Hello" + name + "Welcome to the Cybersmart start quiz")
+    easygui.msgbox("Hello " + name + " Welcome to the Cybersmart start quiz")
 global answers
 answers = ["a", "b", "c", "A", "B", "C"]
 question1Answers = [" A: Delete the message and try to forget about it\n", "B: Keep the text and show an adult you trust\n", "C: Text the person back and say something mean to them"]
@@ -31,7 +31,7 @@ question4countright = 0
 question5countright = 0
 
 def question1():
-    global score, question1countwrong, question1countright
+    global score, question1count, question1countright
     question1countright = 0
     question1count = 0
 while question1count != 3 or question1countright >= 1:
@@ -52,7 +52,7 @@ def question2():
     question2countright = 0    
     question2count = 0
 while question2count != 3 or question2countright >= 1:
-    easygui.enterboxbox(questions[1] + question2Answers[0] + question2Answers[1] + question2Answers[2] + "\nAnswer now: ")
+    easygui.enterbox(questions[1] + question2Answers[0] + question2Answers[1] + question2Answers[2] + "\nAnswer now: ")
     q2 = input("Answer Now: ")
     if q2 == answers[2]:
         easygui.msgbox("that is correct\n")
@@ -69,7 +69,7 @@ def question3():
     question3countright = 0
     question3count = 0
 while question3count != 3 or question3countright >= 1:
-    easygui.enterboxbox(questions[2] + question3Answers[0] + question3Answers[1] + question2Answers[2] + "\nAnswer now: ")
+    easygui.enterbox(questions[2] + question3Answers[0] + question3Answers[1] + question2Answers[2] + "\nAnswer now: ")
     q3 = input("Answer Now: ")
     if q3 == answers[0]:
         easygui.msgbox("that is correct\n")
@@ -103,7 +103,7 @@ def question5():
     question5countright = 0
     question5count = 0
 while question4count != 3 or question5countright >= 1:
-    easygui.enterboxbox(questions[4] + question5Answers[0] + question5Answers[1] + question5Answers[2])
+    easygui.enterbox(questions[4] + question5Answers[0] + question5Answers[1] + question5Answers[2])
     q5 = input("Answer now: ")
     if q5 == answers[0]:
         easygui.msgbox("That was correct\n")
