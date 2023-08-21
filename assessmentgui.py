@@ -2,9 +2,9 @@ import easygui
 name = str(easygui.enterbox("What is your name?: "))
 def contains_number(string):
     return any(char.isdigit() for char in string)
-if contains_number(name):
+while contains_number(name):
     easygui.msgbox("Your name can not contain a number")
-    exit()
+    name = str(easygui.enterbox("What is your name?: "))
     
 
 age = int(easygui.integerbox("Hello " + name + " how old are you?: "))
