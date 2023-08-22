@@ -11,9 +11,10 @@ age = int(easygui.integerbox("Hello " + name + " how old are you?: "))
     
 if age <= 7:
     easygui.msgbox("youre too young to do this quiz")
+    quit()
 elif age >= 14:
     easygui.msgbox("Your above the recommended age for this quiz.\nPlease try the Cybersmath Youth quiz instead")
-    pass
+    quit()
 else:
     easygui.msgbox("Hello " + name + " Welcome to the Cybersmart start quiz")
 global answers
@@ -37,17 +38,22 @@ while question1count != 3 or question1countright >= 1:
     q1 = easygui.enterbox(questions[0] + question1Answers[0] + question1Answers[1] + question1Answers[2] + "\nAnswer now: ")
     q1 = q1.lower()
     if q1 == answers[1]:
-        score += 1
         score = str(score)
         easygui.msgbox("that is correct\n" + "Your score is now" + score + "out of 5")
         question1countright += 1
         score = int(score)
+        if question1count == 0:
+            score += 1
         break
-    
+    elif contains_number(q1):
+        easygui.msgbox("Invalid Input\n please enter only a, b, c")
+        question1count += 1
+        pass
     elif q1 != answers[1]:
         easygui.msgbox("That was wrong")
         question1count += 1
         pass
+    
 
 def question2():
     global score, question2count, question2countright
@@ -57,12 +63,17 @@ while question2count != 3 or question2countright >= 1:
     q2 = easygui.enterbox(questions[1] + question2Answers[0] + question2Answers[1] + question2Answers[2] + "\nAnswer now: ")
     q2 = q2.lower()
     if q2 == answers[2]:
-        score += 1
         score = str(score)
         easygui.msgbox("that is correct\n" + "Your score is now " + score + " out of 5")
         question2countright += 1
         score = int(score)
+        if question2count == 0:
+            score += 1
         break
+    elif contains_number(q2):
+        easygui.msgbox("Invalid Input\n please enter only a, b, c")
+        question2count += 1
+        pass
     elif q2 != answers[2]:
         easygui.msgbox("That was wrong")
         question2count += 1
@@ -76,12 +87,17 @@ while question3count != 3 or question3countright >= 1:
     q3 = easygui.enterbox(questions[2] + question3Answers[0] + question3Answers[1] + question3Answers[2] + "\nAnswer now: ")
     q3 = q3.lower()
     if q3 == answers[0]:
-        score += 1
         score = str(score)
         easygui.msgbox("that is correct\n" + "Your score is now " + score + " out of 5")
         score = int(score)
         question3countright += 1
+        if question3count == 0:
+            score += 1
         break
+    elif contains_number(q3):
+        easygui.msgbox("Invalid Input\n please enter only a, b, c")
+        question3count += 1
+        pass
     elif q3 != answers[0]:
         easygui.msgbox("That was wrong")
         question3count += 1
@@ -95,12 +111,17 @@ while question4count != 3 or question4countright >= 1:
     q4 = easygui.enterbox(questions[3] + question4Answers[0] + question4Answers[1] + question4Answers[2])
     q4 = q4.lower()
     if q4 == answers[2]:
-        score += 1
         score = str(score)
         easygui.msgbox("That was correct\n" + "Your score is now " + score + " out of 5")
         score = int(score)
         question4countright += 1
+        if question4count == 0:
+            score += 1
         break
+    elif contains_number(q4):
+        easygui.msgbox("Invalid Input\n please enter only a, b, c")
+        question4count += 1
+        pass
     elif q4 != answers[2]:
         easygui.msgbox("That was wrong\n")
         question4count += 1
@@ -114,12 +135,17 @@ while question4count != 3 or question5countright >= 1:
     q5 = easygui.enterbox(questions[4] + question5Answers[0] + question5Answers[1] + question5Answers[2])
     q5 = q5.lower()
     if q5 == answers[0]:
-        score += 1
         score = str(score)
         easygui.msgbox("That was correct\n" + "Your score is now " + score + " out of 5")
         question5countright += 1
         score = int(score)
+        if question5count == 0:
+            score += 1
         break
+    elif contains_number(q5):
+        easygui.msgbox("Invalid Input\n please enter only a, b, c")
+        question5count += 1
+        pass
     elif q5 != answers[0]:
         easygui.msgbox("That was wrong\n")
         question5count += 1
@@ -132,4 +158,5 @@ question4()
 question5()
 score = str(score)
 easygui.msgbox(name + " Your score is " + score + " out of 5")
+
 
