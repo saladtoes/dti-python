@@ -1,0 +1,5 @@
+q1AndAnswer1 = ['asdasd', 'asdasd\n', 'asdasd\n', 'asdasd\n', 1]
+q2AndAnswer2 = ['asdasd', 'asdasd\n', 'asdasd\n', 'asdasd\n', 2]
+q3AndAnswer3 = ['asdasd', 'asdasd\n', 'asdasd\n', 'asdasd\n', 2]
+q4AndAnswer4 = ['sdfgdsfg', 'sdfgsdfg\n', 'sdfgsdfg\n', 'sdfgsdfg\n', 2]
+q5AndAnswer5 = ['dsfgsdfg', 'sdfgdsfg\n', 'sdfgsdfg\n', 'sdfgdsfg\n', 2]
