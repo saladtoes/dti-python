@@ -22,6 +22,7 @@ def play():
         elif q1 != a.q1AndAnswer1[4]:
             print("That was wrong")
             question1count += 1
+            print("attempt", question1count, "of 3")
             pass
 
     def question2():
@@ -41,6 +42,7 @@ def play():
         elif q2 != a.q2AndAnswer2[4]:
             print("That was wrong")
             question2count += 1
+            print("attempt", question2count, "of 3")
             pass
 
     def question3():
@@ -60,6 +62,7 @@ def play():
         elif q3 != a.q3AndAnswer3[4]:
             print("That was wrong")
             question3count += 1
+            print("attempt", question3count, "of 3")
             pass
 
     def question4():
@@ -79,6 +82,7 @@ def play():
         elif q4 != a.q4AndAnswer4[4]:
             print("That was wrong\n")
             question4count += 1
+            print("attempt", question4count, "of 3")
             pass
 
     def question5():
@@ -98,6 +102,7 @@ def play():
         elif q5 != a.q5AndAnswer5[4]:
             print("That was wrong\n")
             question5count += 1
+            print("attempt", question5count, "of 3")
             pass
     question1()
     question2()
@@ -106,3 +111,4 @@ def play():
     question5()
     print("Your score is", score, "out of 5")
 
+play()

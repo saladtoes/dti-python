@@ -8,8 +8,9 @@
 # q4answers = []
 # q5 = []
 # q5answers = []
-import playgame
-import os
+import bisect
+
+
 def convertTuple(tup):
     str = ''
     for item in tup:
@@ -41,11 +42,16 @@ def convertTuple(tup):
 
 
 
-print("This is the creator for the custom quiz.\n to run the quiz that you make via this script please run 'playgane.py'\n In this script you are only able to make upto 5 questions in a quiz.\n each question MUST have 3 answers")
+
+
+print(" This is the maker for the custom quiz.\n to run the quiz that you make via this script please run 'playgame.py'\n In this script you are only able to make upto 5 questions in a quiz.\n each question MUST have 3 answers\n\n")
 
 
 def makeNewVar():
+
     questionnum = int(input("enter question number: "))
+
+
     if questionnum == 1:
             global quest1Final
             questions = []
@@ -152,15 +158,4 @@ file.write(quest2Final + '\n')
 file.write(quest3Final + '\n')
 file.write(quest4Final + '\n')
 file.write(quest5Final + '\n')
-
 file.close()
-
-def play():
-    again = input("would you like to play the game right now?")
-    if again.lower() == 'y':
-        playgame.play()
-        exit()
-    else:
-        exit()
-
-play()
