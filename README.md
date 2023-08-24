@@ -1,2 +1,2 @@
 # dti-python
-python repo for dti
+github repo for dti python
