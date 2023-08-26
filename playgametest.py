@@ -12,7 +12,7 @@ def question1():
     if isinstance(a.q1AndAnswer1[2], int):
         while question1count != 3 or question1countright >= 1:
             print(a.q1AndAnswer1[0])
-            print(a.q1AndAnswer1[1])
+            print(" 1.", a.q1AndAnswer1[1])
             q1 = int(input("Answer Now: "))
             if q1 == a.q1AndAnswer1[2]:
                 print("that is correct\n")
@@ -28,7 +28,7 @@ def question1():
     elif isinstance(a.q1AndAnswer1[3], int):
         while question1count != 3 or question1countright >= 1:
             print(a.q1AndAnswer1[0])
-            print(a.q1AndAnswer1[1], a.q1AndAnswer1[2])
+            print(" 1.", a.q1AndAnswer1[1], "2.", a.q1AndAnswer1[2])
             q1 = int(input("Answer Now: "))
             if q1 == a.q1AndAnswer1[3]:
                 print("that is correct\n")
@@ -44,7 +44,7 @@ def question1():
     elif isinstance(a.q1AndAnswer1[4], int):
         while question1count != 3 or question1countright >= 1:
             print(a.q1AndAnswer1[0])
-            print(a.q1AndAnswer1[1], a.q1AndAnswer1[2], a.q1AndAnswer1[3])
+            print(" 1.", a.q1AndAnswer1[1], "2.", a.q1AndAnswer1[2], "3.", a.q1AndAnswer1[3])
             q1 = int(input("Answer Now: "))
             if q1 == a.q1AndAnswer1[4]:
                 print("that is correct\n")
@@ -60,7 +60,7 @@ def question1():
     elif isinstance(a.q1AndAnswer1[5], int):
         while question1count != 3 or question1countright >= 1:
             print(a.q1AndAnswer1[0])
-            print(a.q1AndAnswer1[1], a.q1AndAnswer1[2], a.q1AndAnswer1[3], a.q1AndAnswer1[4])
+            print(" 1.", a.q1AndAnswer1[1], "2.", a.q1AndAnswer1[2], "3.", a.q1AndAnswer1[3], "4.", a.q1AndAnswer1[4])
             q1 = int(input("Answer Now: "))
             if q1 == a.q1AndAnswer1[5]:
                 print("that is correct\n")
@@ -76,7 +76,7 @@ def question1():
     elif isinstance(a.q1AndAnswer1[6], int):
         while question1count != 3 or question1countright >= 1:
             print(a.q1AndAnswer1[0])
-            print(a.q1AndAnswer1[1], a.q1AndAnswer1[2], a.q1AndAnswer1[3], a.q1AndAnswer1[4])
+            print(" 1.", a.q1AndAnswer1[1], "2.", a.q1AndAnswer1[2], "3.", a.q1AndAnswer1[3], "4.", a.q1AndAnswer1[4], "5.", a.q1AndAnswer1[5])
             q1 = int(input("Answer Now: "))
             if q1 == a.q1AndAnswer1[6]:
                 print("that is correct\n")
@@ -97,7 +97,7 @@ def question2():
     if isinstance(a.q2AndAnswer2[2], int):
         while question2count != 3 or question2countright >= 1:
             print(a.q2AndAnswer2[0])
-            print(a.q2AndAnswer2[1])
+            print(" 1.", a.q2AndAnswer2[1])
             q2 = int(input("Answer Now: "))
             if q2 == a.q2AndAnswer2[2]:
                 print("that is correct\n")
@@ -113,7 +113,7 @@ def question2():
     elif isinstance(a.q2AndAnswer2[3], int):
         while question2count != 3 or question2countright >= 1:
             print(a.q2AndAnswer2[0])
-            print(a.q2AndAnswer2[1], a.q2AndAnswer2[2])
+            print(" 1.", a.q2AndAnswer2[1], "2.", a.q2AndAnswer2[2])
             q2 = int(input("Answer Now: "))
             if q2 == a.q2AndAnswer2[3]:
                 print("that is correct\n")
@@ -129,7 +129,7 @@ def question2():
     elif isinstance(a.q2AndAnswer2[4], int):
         while question2count != 3 or question2countright >= 1:
             print(a.q2AndAnswer2[0])
-            print(a.q2AndAnswer2[1], a.q2AndAnswer2[2], a.q2AndAnswer2[3])
+            print(" 1.", a.q2AndAnswer2[1], "2.", a.q2AndAnswer2[2], "3.", a.q2AndAnswer2[3])
             q2 = int(input("Answer Now: "))
             if q2 == a.q2AndAnswer2[4]:
                 print("that is correct\n")
@@ -145,7 +145,7 @@ def question2():
     elif isinstance(a.q2AndAnswer2[5], int):
         while question2count != 3 or question2countright >= 1:
             print(a.q2AndAnswer2[0])
-            print(a.q2AndAnswer2[1], a.q2AndAnswer2[2], a.q2AndAnswer2[3], a.q2AndAnswer2[4])
+            print(" 1.", a.q2AndAnswer2[1], "2.", a.q2AndAnswer2[2], "3.", a.q2AndAnswer2[3], "4.", a.q2AndAnswer2[4])
             q2 = int(input("Answer Now: "))
             if q2 == a.q2AndAnswer2[5]:
                 print("that is correct\n")
@@ -161,7 +161,7 @@ def question2():
     elif isinstance(a.q2AndAnswer2[6], int):
         while question2count != 3 or question2countright >= 1:
             print(a.q2AndAnswer2[0])
-            print(a.q2AndAnswer2[1], a.q2AndAnswer2[2], a.q2AndAnswer2[3], a.q2AndAnswer2[5])
+            print(" 1.", a.q2AndAnswer2[1], "2.", a.q2AndAnswer2[2], "3.", a.q2AndAnswer2[3], "4.", a.q2AndAnswer2[4], "5.", a.q2AndAnswer2[5])
             q2 = int(input("Answer Now: "))
             if q2 == a.q2AndAnswer2[6]:
                 print("that is correct\n")
@@ -182,7 +182,7 @@ def question3():
     if isinstance(a.q3AndAnswer3[2], int):
         while question3count != 3 or question3countright >= 1:
             print(a.q3AndAnswer3[0])
-            print(a.q3AndAnswer3[1], a.q3AndAnswer3[2])
+            print(" 1.", a.q3AndAnswer3[1])
             q3 = int(input("Answer Now: "))
             if q3 == a.q3AndAnswer3[2]:
                 print("that is correct\n")
@@ -198,7 +198,7 @@ def question3():
     elif isinstance(a.q3AndAnswer3[3], int):
         while question3count != 3 or question3countright >= 1:
             print(a.q3AndAnswer3[0])
-            print(a.q3AndAnswer3[1], a.q3AndAnswer3[2])
+            print(" 1.", a.q3AndAnswer3[1], "2.", a.q3AndAnswer3[2])
             q3 = int(input("Answer Now: "))
             if q3 == a.q3AndAnswer3[3]:
                 print("that is correct\n")
@@ -214,7 +214,7 @@ def question3():
     elif isinstance(a.q3AndAnswer3[4], int):
         while question3count != 3 or question3countright >= 1:
             print(a.q3AndAnswer3[0])
-            print(a.q3AndAnswer3[1], a.q3AndAnswer3[2], a.q3AndAnswer3[3])
+            print(" 1.", a.q3AndAnswer3[1], "2.", a.q3AndAnswer3[2], "3.", a.q3AndAnswer3[3])
             q3 = int(input("Answer Now: "))
             if q3 == a.q3AndAnswer3[4]:
                 print("that is correct\n")
@@ -230,7 +230,7 @@ def question3():
     elif isinstance(a.q3AndAnswer3[5], int):
         while question3count != 3 or question3countright >= 1:
             print(a.q3AndAnswer3[0])
-            print(a.q3AndAnswer3[1], a.q3AndAnswer3[2], a.q3AndAnswer3[3], a.q3AndAnswer3[4])
+            print(" 1.", a.q3AndAnswer3[1], "2.", a.q3AndAnswer3[2], "3.", a.q3AndAnswer3[3], "4.", a.q3AndAnswer3[4])
             q3 = int(input("Answer Now: "))
             if q3 == a.q3AndAnswer3[5]:
                 print("that is correct\n")
@@ -246,7 +246,7 @@ def question3():
     elif isinstance(a.q3AndAnswer3[6], int):
         while question3count != 3 or question3countright >= 1:
             print(a.q3AndAnswer3[0])
-            print(a.q3AndAnswer3[1], a.q3AndAnswer3[2], a.q3AndAnswer3[3], a.q3AndAnswer3[4], a.q3AndAnswer3[5])
+            print(" 1.", a.q3AndAnswer3[1], "2.", a.q3AndAnswer3[2], "3.", a.q3AndAnswer3[3], "4.", a.q3AndAnswer3[4], "5.", a.q3AndAnswer3[5])
             q3 = int(input("Answer Now: "))
             if q3 == a.q3AndAnswer3[6]:
                 print("that is correct\n")
@@ -267,7 +267,7 @@ def question4():
     if isinstance(a.q4AndAnswer4[2], int):
         while question4count != 3 or question4countright >= 1:
             print(a.q4AndAnswer4[0])
-            print(a.q4AndAnswer4[1])
+            print(" 1.", a.q4AndAnswer4[1])
             q4 = int(input("Answer now: "))
             if q4 == a.q4AndAnswer4[2]:
                 print("That was correct\n")
@@ -283,7 +283,7 @@ def question4():
     elif isinstance(a.q4AndAnswer4[3], int):
         while question4count != 3 or question4countright >= 1:
             print(a.q4AndAnswer4[0])
-            print(a.q4AndAnswer4[1], a.q4AndAnswer4[2])
+            print(" 1.", a.q4AndAnswer4[1], "2.", a.q4AndAnswer4[2])
             q4 = int(input("Answer now: "))
             if q4 == a.q4AndAnswer4[3]:
                 print("That was correct\n")
@@ -299,7 +299,7 @@ def question4():
     elif isinstance(a.q4AndAnswer4[4], int):
         while question4count != 3 or question4countright >= 1:
             print(a.q4AndAnswer4[0])
-            print(a.q4AndAnswer4[1], a.q4AndAnswer4[2], a.q4AndAnswer4[3])
+            print("1.", a.q4AndAnswer4[1], "2.", a.q4AndAnswer4[2], "3.", a.q4AndAnswer4[3])
             q4 = int(input("Answer now: "))
             if q4 == a.q4AndAnswer4[4]:
                 print("That was correct\n")
@@ -315,7 +315,7 @@ def question4():
     elif isinstance(a.q4AndAnswer4[5], int):
         while question4count != 3 or question4countright >= 1:
             print(a.q4AndAnswer4[0])
-            print(a.q4AndAnswer4[1], a.q4AndAnswer4[2], a.q4AndAnswer4[3], a.q4AndAnswers4[4])
+            print(" 1.", a.q4AndAnswer4[1], "2.", a.q4AndAnswer4[2], "3.", a.q4AndAnswer4[3], "4.", a.q4AndAnswers4[4])
             q4 = int(input("Answer now: "))
             if q4 == a.q4AndAnswer4[5]:
                 print("That was correct\n")
@@ -331,7 +331,7 @@ def question4():
     elif isinstance(a.q4AndAnswer4[6], int):
         while question4count != 3 or question4countright >= 1:
             print(a.q4AndAnswer4[0])
-            print(a.q4AndAnswer4[1], a.q4AndAnswer4[2], a.q4AndAnswer4[3], a.q4AndAnswers4[4], a.q5AndAnswer5[5])
+            print(" 1.", a.q4AndAnswer4[1], "2.", a.q4AndAnswer4[2], "3.", a.q4AndAnswer4[3], "4.", a.q4AndAnswers4[4], "5.", a.q5AndAnswer5[5])
             q4 = int(input("Answer now: "))
             if q4 == a.q4AndAnswer4[6]:
                 print("That was correct\n")
@@ -352,7 +352,7 @@ def question5():
     if isinstance(a.q5AndAnswer5[2], int):
         while question4count != 3 or question5countright >= 1:
             print(a.q5AndAnswer5[0])  
-            print(a.q5AndAnswer5[1])
+            print(" 1.", a.q5AndAnswer5[1])
             q5 = int(input("Answer now: "))
             if q5 == a.q5AndAnswer5[2]:
                 print("That was correct\n")
@@ -368,7 +368,7 @@ def question5():
     elif isinstance(a.q5AndAnswer5[3], int):
         while question4count != 3 or question5countright >= 1:
             print(a.q5AndAnswer5[0])  
-            print(a.q5AndAnswer5[1], a.q5AndAnswer5[2])
+            print(" 1.", a.q5AndAnswer5[1], "2.", a.q5AndAnswer5[2])
             q5 = int(input("Answer now: "))
             if q5 == a.q5AndAnswer5[3]:
                 print("That was correct\n")
@@ -384,7 +384,7 @@ def question5():
     elif isinstance(a.q5AndAnswer5[4], int):
         while question4count != 3 or question5countright >= 1:
             print(a.q5AndAnswer5[0])  
-            print(a.q5AndAnswer5[1], a.q5AndAnswer5[2], a.q5AndAnswer5[3])
+            print(" 1.", a.q5AndAnswer5[1], "2.", a.q5AndAnswer5[2], "3.", a.q5AndAnswer5[3])
             q5 = int(input("Answer now: "))
             if q5 == a.q5AndAnswer5[4]:
                 print("That was correct\n")
@@ -400,7 +400,7 @@ def question5():
     elif isinstance(a.q5AndAnswer5[5], int):
         while question4count != 3 or question5countright >= 1:
             print(a.q5AndAnswer5[0])  
-            print(a.q5AndAnswer5[1], a.q5AndAnswer5[2], a.q5AndAnswer5[3], a.q5AndAnswer5[4])
+            print(" 1.", a.q5AndAnswer5[1], "2.", a.q5AndAnswer5[2], "3.", a.q5AndAnswer5[3], "4.", a.q5AndAnswer5[4])
             q5 = int(input("Answer now: "))
             if q5 == a.q5AndAnswer5[5]:
                 print("That was correct\n")
@@ -416,7 +416,7 @@ def question5():
     elif isinstance(a.q5AndAnswer5[6], int):
         while question4count != 3 or question5countright >= 1:
             print(a.q5AndAnswer5[0])  
-            print(a.q5AndAnswer5[1], a.q5AndAnswer5[2], a.q5AndAnswer5[3], a.q5AndAnswer5[4], a.q5AndAnswer5[5])
+            print(" 1.", a.q5AndAnswer5[1], "2.", a.q5AndAnswer5[2], "3.", a.q5AndAnswer5[3], "4.", a.q5AndAnswer5[4], "5.", a.q5AndAnswer5[5])
             q5 = int(input("Answer now: "))
             if q5 == a.q5AndAnswer5[6]:
                 print("That was correct\n")

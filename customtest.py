@@ -347,7 +347,7 @@ def questions5():
         quest5 = ("q5AndAnswer5 = ", quest5)
         quest5Final = convertTuple(quest5)
     elif q5asnwercount == 2:
-        q4 = input("enter question 1: ")
+        q5 = input("enter question 1: ")
         questions.append(q5)
         q5Answers5 = input(" Enter Answer 1: ")
         q5Answers.append(q5Answers5 + '\n')
