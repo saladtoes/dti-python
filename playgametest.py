@@ -13,7 +13,7 @@ def question1():
         while question1count != 3 or question1countright >= 1:
             print(a.q1AndAnswer1[0])
             print(" 1.", a.q1AndAnswer1[1])
-            q1 = int(input("Answer Now: "))
+            q1 = input("Answer Now: ")
             if q1 == a.q1AndAnswer1[2]:
                 print("that is correct\n")
                 question1countright += 1
@@ -45,7 +45,8 @@ def question1():
         while question1count != 3 or question1countright >= 1:
             print(a.q1AndAnswer1[0])
             print(" 1.", a.q1AndAnswer1[1], "2.", a.q1AndAnswer1[2], "3.", a.q1AndAnswer1[3])
-            q1 = int(input("Answer Now: "))
+            q1 = input("Answer Now: ")
+            q1 = int(q1)
             if q1 == a.q1AndAnswer1[4]:
                 print("that is correct\n")
                 question1countright += 1

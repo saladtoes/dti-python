@@ -1,16 +1,3 @@
-# q1 = []
-# q1answers = []
-# q2 = []
-# q2answers = []
-# q3 = []
-# q3answers = []
-# q4 = []
-# q4answers = []
-# q5 = []
-# q5answers = []
-import bisect
-
-
 def convertTuple(tup):
     str = ''
     for item in tup:
@@ -21,12 +8,16 @@ file = open("answers.py", 'w')
 file.close()
 print(" This is the maker for the custom quiz.\n to run the quiz that you make via this script please run 'playgame.py'\n In this script you are only able to make upto 5 questions in a quiz.\n\n")
 
-
-
-numberofq = int(input("How many questions do you want to make?"))
-
-
-
+def howmanyq():
+    global numberofq
+    try:
+        numberofq = int(input("How many questions do you want to make?"))
+    except ValueError:
+        print("Please input an number")
+        howmanyq()
+    else:
+        pass
+howmanyq()
 def questions1():
     global quest1Final
     q1asnwercount = int(input("Q1. How many answers do you want this question to have?\n Maximum of 5: "))
@@ -39,7 +30,7 @@ def questions1():
         questions.append(q1)
         q1Answers1 = input(" Enter Answer 1: ")
         q1Answers.append(q1Answers1 + '\n')
-        correctAnswer1 = int(input("Enter the correct answer, 1:  "))
+        correctAnswer1 = input("Enter the correct answer, 1:  ")
         quest1 = [q1, q1Answers[0], correctAnswer1]
         quest1 = str(quest1)
         quest1 = ("q1AndAnswer1 = ", quest1)
@@ -51,7 +42,7 @@ def questions1():
         q1Answers.append(q1Answers1 + '\n')
         q1Answers1 = input(" Enter Answer 2: ")
         q1Answers.append(q1Answers1 + '\n')
-        correctAnswer1 = int(input("Enter the correct answer, 1, 2:  "))
+        correctAnswer1 = input("Enter the correct answer, 1, 2:  ")
         quest1 = [q1, q1Answers[0], q1Answers[1], correctAnswer1]
         quest1 = str(quest1)
         quest1 = ("q1AndAnswer1 = ", quest1)
@@ -65,7 +56,7 @@ def questions1():
         q1Answers.append(q1Answers1 + '\n')
         q1Answers1 = input(" Enter Answer 3: ")
         q1Answers.append(q1Answers1 + '\n')
-        correctAnswer1 = int(input("Enter the correct answer, 1, 2, 3: "))
+        correctAnswer1 = input("Enter the correct answer, 1, 2, 3: ")
         quest1 = [q1, q1Answers[0], q1Answers[1], q1Answers[2], correctAnswer1]
         quest1 = str(quest1)
         quest1 = ("q1AndAnswer1 = ", quest1)
@@ -81,7 +72,7 @@ def questions1():
         q1Answers.append(q1Answers1 + '\n')
         q1Answers1 = input(" Enter Answer 4: ")
         q1Answers.append(q1Answers1 + '\n')
-        correctAnswer1 = int(input("Enter the correct answer, 1, 2, 3, 4: "))
+        correctAnswer1 = input("Enter the correct answer, 1, 2, 3, 4: ")
         quest1 = [q1, q1Answers[0], q1Answers[1], q1Answers[2], q1Answers[3], correctAnswer1]
         quest1 = str(quest1)
         quest1 = ("q1AndAnswer1 = ", quest1)
@@ -99,7 +90,7 @@ def questions1():
         q1Answers.append(q1Answers1 + '\n')
         q1Answers1 = input(" Enter Answer 5: ")
         q1Answers.append(q1Answers1 + '\n')
-        correctAnswer1 = int(input("Enter the correct answer, 1, 2, 3, 4, 5: "))
+        correctAnswer1 = input("Enter the correct answer, 1, 2, 3, 4, 5: ")
         quest1 = [q1, q1Answers[0], q1Answers[1], q1Answers[2], q1Answers[3], q1Answers[4], correctAnswer1]
         quest1 = str(quest1)
         quest1 = ("q1AndAnswer1 = ", quest1)
@@ -115,7 +106,7 @@ def questions2():
         questions.append(q2)
         q2Answers2 = input(" Enter Answer 1: ")
         q2Answers.append(q2Answers2 + '\n')
-        correctAnswer2 = int(input("Enter the correct answer, 1:  "))
+        correctAnswer2 = input("Enter the correct answer, 1:  ")
         quest2 = [q2, q2Answers[0], correctAnswer2]
         quest2 = str(quest2)
         quest2 = ("q2AndAnswer2 = ", quest2)
