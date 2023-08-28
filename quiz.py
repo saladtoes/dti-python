@@ -9,7 +9,7 @@ def main():
 
         if again == "n":
             print ("Thanks for Playing!")
-            return
+            
         elif again == "y":
             print ("Lets play!")
         else:

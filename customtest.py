@@ -3,9 +3,11 @@ def convertTuple(tup):
     for item in tup:
         str = str + item
     return str
- 
+#clears answers file 
 file = open("answers.py", 'w')
 file.close()
+
+
 print(" This is the maker for the custom quiz.\n to run the quiz that you make via this script please run 'playgame.py'\n In this script you are only able to make upto 5 questions in a quiz.\n\n")
 
 def howmanyq():
@@ -21,7 +23,6 @@ howmanyq()
 def questions1():
     global quest1Final
     q1asnwercount = int(input("Q1. How many answers do you want this question to have?\n Maximum of 5: "))
-    
     questions = []
     q1Answers = []
 
@@ -30,7 +31,7 @@ def questions1():
         questions.append(q1)
         q1Answers1 = input(" Enter Answer 1: ")
         q1Answers.append(q1Answers1 + '\n')
-        correctAnswer1 = input("Enter the correct answer, 1:  ")
+        correctAnswer1 = int(input("Enter the correct answer, 1:  "))
         quest1 = [q1, q1Answers[0], correctAnswer1]
         quest1 = str(quest1)
         quest1 = ("q1AndAnswer1 = ", quest1)
@@ -42,7 +43,7 @@ def questions1():
         q1Answers.append(q1Answers1 + '\n')
         q1Answers1 = input(" Enter Answer 2: ")
         q1Answers.append(q1Answers1 + '\n')
-        correctAnswer1 = input("Enter the correct answer, 1, 2:  ")
+        correctAnswer1 = int(input("Enter the correct answer, 1, 2:  "))
         quest1 = [q1, q1Answers[0], q1Answers[1], correctAnswer1]
         quest1 = str(quest1)
         quest1 = ("q1AndAnswer1 = ", quest1)
@@ -56,7 +57,7 @@ def questions1():
         q1Answers.append(q1Answers1 + '\n')
         q1Answers1 = input(" Enter Answer 3: ")
         q1Answers.append(q1Answers1 + '\n')
-        correctAnswer1 = input("Enter the correct answer, 1, 2, 3: ")
+        correctAnswer1 = int(input("Enter the correct answer, 1, 2, 3: "))
         quest1 = [q1, q1Answers[0], q1Answers[1], q1Answers[2], correctAnswer1]
         quest1 = str(quest1)
         quest1 = ("q1AndAnswer1 = ", quest1)
@@ -72,7 +73,7 @@ def questions1():
         q1Answers.append(q1Answers1 + '\n')
         q1Answers1 = input(" Enter Answer 4: ")
         q1Answers.append(q1Answers1 + '\n')
-        correctAnswer1 = input("Enter the correct answer, 1, 2, 3, 4: ")
+        correctAnswer1 = int(input("Enter the correct answer, 1, 2, 3, 4: "))
         quest1 = [q1, q1Answers[0], q1Answers[1], q1Answers[2], q1Answers[3], correctAnswer1]
         quest1 = str(quest1)
         quest1 = ("q1AndAnswer1 = ", quest1)
@@ -90,7 +91,7 @@ def questions1():
         q1Answers.append(q1Answers1 + '\n')
         q1Answers1 = input(" Enter Answer 5: ")
         q1Answers.append(q1Answers1 + '\n')
-        correctAnswer1 = input("Enter the correct answer, 1, 2, 3, 4, 5: ")
+        correctAnswer1 = int(input("Enter the correct answer, 1, 2, 3, 4, 5: "))
         quest1 = [q1, q1Answers[0], q1Answers[1], q1Answers[2], q1Answers[3], q1Answers[4], correctAnswer1]
         quest1 = str(quest1)
         quest1 = ("q1AndAnswer1 = ", quest1)
@@ -106,7 +107,7 @@ def questions2():
         questions.append(q2)
         q2Answers2 = input(" Enter Answer 1: ")
         q2Answers.append(q2Answers2 + '\n')
-        correctAnswer2 = input("Enter the correct answer, 1:  ")
+        correctAnswer2 = int(input("Enter the correct answer, 1:  "))
         quest2 = [q2, q2Answers[0], correctAnswer2]
         quest2 = str(quest2)
         quest2 = ("q2AndAnswer2 = ", quest2)
@@ -398,53 +399,63 @@ def questions5():
         quest5 = ("q5AndAnswer5 = ", quest5)
         quest5Final = convertTuple(quest5)
 
-    
-if numberofq == 1:
-    questions1()
-    file = open("answers.py", 'a')
-    file.write(quest1Final + '\n')
-    file.close()
-elif numberofq == 2:
-    questions1()
-    questions2()
-    file = open("answers.py", 'a')
-    file.write(quest1Final + '\n')
-    file.write(quest2Final + '\n')
-    file.close()
-elif numberofq == 3:
-    questions1()
-    questions2()
-    questions3()
-    file = open("answers.py", 'a')
-    file.write(quest1Final + '\n')
-    file.write(quest2Final + '\n')
-    file.write(quest3Final + '\n')
-    file.close()
-elif numberofq == 4:
-    questions1()
-    questions2()
-    questions3()
-    questions4()
-    file = open("answers.py", 'a')
-    file.write(quest1Final + '\n')
-    file.write(quest2Final + '\n')
-    file.write(quest3Final + '\n')
-    file.write(quest4Final + '\n')
-    file.close()
+def run():
+    global numberofq
+    if numberofq == 1:
+        questions1()
+        file = open("answers.py", 'a')
+        file.write(quest1Final + '\n')
+        file.close()
+    elif numberofq == 2:
+        questions1()
+        questions2()
+        file = open("answers.py", 'a')
+        file.write(quest1Final + '\n')
+        file.write(quest2Final + '\n')
+        file.close()
+    elif numberofq == 3:
+        questions1()
+        questions2()
+        questions3()
+        file = open("answers.py", 'a')
+        file.write(quest1Final + '\n')
+        file.write(quest2Final + '\n')
+        file.write(quest3Final + '\n')
+        file.close()
+    elif numberofq == 4:
+        questions1()
+        questions2()
+        questions3()
+        questions4()
+        file = open("answers.py", 'a')
+        file.write(quest1Final + '\n')
+        file.write(quest2Final + '\n')
+        file.write(quest3Final + '\n')
+        file.write(quest4Final + '\n')
+        file.close()
 
-elif numberofq == 5:
-    questions1()
-    questions2()
-    questions3()
-    questions4()
-    questions5()
-    file = open("answers.py", 'a')
-    file.write(quest1Final + '\n')
-    file.write(quest2Final + '\n')
-    file.write(quest3Final + '\n')
-    file.write(quest4Final + '\n')
-    file.write(quest5Final + '\n')
-    file.close()
+    elif numberofq == 5:
+        questions1()
+        questions2()
+        questions3()
+        questions4()
+        questions5()
+        file = open("answers.py", 'a')
+        file.write(quest1Final + '\n')
+        file.write(quest2Final + '\n')
+        file.write(quest3Final + '\n')
+        file.write(quest4Final + '\n')
+        file.write(quest5Final + '\n')
+        file.close()
+    else:
+        if numberofq < 1 or numberofq > 5:
+            numberofq = int(input("Please enter a valid number 1-5: "))
+            run()
+
+if numberofq < 1 or numberofq > 5:
+    run()
+else:
+    run()
 
 numberofq = str(numberofq)
 numberofq = ("numberofq = ", numberofq)
