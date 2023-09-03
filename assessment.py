@@ -38,11 +38,12 @@ while question1count != 3 or question1countright >= 1:
     q1 = input("Answer Now: ")
     if q1 == answers[1]:
         print("that is correct\n")
-        score += 1
         question1countright += 1
         if question1count == 0:
             score += 1
         break
+    elif contains_number(q1) or q1 not in answers:
+        print("please input a, b or c")
     elif q1 != answers[1]:
         print("That was wrong")
         question1count += 1
@@ -58,11 +59,12 @@ while question2count != 3 or question2countright >= 1:
     q2 = input("Answer Now: ")
     if q2 == answers[2]:
         print("that is correct\n")
-        score += 1
         question2countright += 1
         if question2count == 0:
             score += 1
         break
+    elif contains_number(q2) or q2 not in answers:
+        print("please input a, b or c")
     elif q2 != answers[2]:
         print("That was wrong")
         question2count += 1
@@ -78,11 +80,12 @@ while question3count != 3 or question3countright >= 1:
     q3 = input("Answer Now: ")
     if q3 == answers[0]:
         print("that is correct\n")
-        score += 1
         question3countright += 1
         if question1count == 0:
             score += 1
         break
+    elif contains_number(q3) or q3 not in answers:
+        print("please input a, b or c")
     elif q3 != answers[0]:
         print("That was wrong")
         question3count += 1
@@ -98,11 +101,12 @@ while question4count != 3 or question4countright >= 1:
     q4 = input("Answer now: ")
     if q4 == answers[2]:
         print("That was correct\n")
-        score += 1
         question4countright += 1
         if question1count == 0:
             score += 1
         break
+    elif contains_number(q4) or q4 not in answers:
+        print("please input a, b or c")
     elif q4 != answers[2]:
         print("That was wrong\n")
         question4count += 1
@@ -118,11 +122,12 @@ while question4count != 3 or question5countright >= 1:
     q5 = input("Answer now: ")
     if q5 == answers[0]:
         print("That was correct\n")
-        score += 1
         question5countright += 1
         if question1count == 0:
             score += 1
         break
+    elif contains_number(q5) or q5 not in answers:
+        print("please input a, b or c")
     elif q5 != answers[0]:
         print("That was wrong\n")
         question5count += 1

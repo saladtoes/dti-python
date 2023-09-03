@@ -43,7 +43,7 @@ def question1():
     global score, question1count, question1countright
     question1countright = 0
     question1count = 0
-# keeps running code if they didnt get it right the first time or they got the question wrong 3 times
+# keeps running code if they dont get it right the first time or they got the question wrong 3 times
 while question1count != 3 or question1countright >= 1:
     q1 = easygui.enterbox(questions[0] + question1Answers[0] + question1Answers[1] + question1Answers[2] + "\nAnswer now: ")
     q1 = q1.lower()
@@ -55,6 +55,7 @@ while question1count != 3 or question1countright >= 1:
         
         score = str(score)
         easygui.msgbox("that is correct\n" + "Your score is now" + score + "out of 5")
+        #adds point to right count to exit while loop
         question1countright += 1
         score = int(score)
 
@@ -64,11 +65,12 @@ while question1count != 3 or question1countright >= 1:
         easygui.msgbox("Invalid Input\n please enter only a, b, c")
         question1count += 1
         pass
-    #if they get the question wrong they get told they got it wrong 
+    #if they get the question wrong they get told they got it wrong and adds a point to the wrong
     elif q1 != answers[1]:
         easygui.msgbox("That was wrong")
         question1count += 1
         pass
+    
     
 
 def question2():
@@ -86,6 +88,8 @@ while question2count != 3 or question2countright >= 1:
             pass
         score = str(score)
         easygui.msgbox("that is correct\n" + "Your score is now " + score + " out of 5")
+        #adds point to right count to exit while loop
+        
         question2countright += 1
         score = int(score)
 
@@ -95,7 +99,8 @@ while question2count != 3 or question2countright >= 1:
         easygui.msgbox("Invalid Input\n please enter only a, b, c")
         question2count += 1
         pass
-    #if they get the question wrong they get told they got it wrong 
+    #if they get the question wrong they get told they got it wrong and adds a point to the wrong
+
     elif q2 != answers[2]:
         easygui.msgbox("That was wrong")
         question2count += 1
@@ -115,6 +120,8 @@ while question3count != 3 or question3countright >= 1:
         score = str(score)
         easygui.msgbox("that is correct\n" + "Your score is now " + score + " out of 5")
         score = int(score)
+        #adds point to right count to exit while loop
+        
         question3countright += 1
         break
     elif contains_number(q3):
@@ -122,7 +129,8 @@ while question3count != 3 or question3countright >= 1:
         easygui.msgbox("Invalid Input\n please enter only a, b, c")
         question3count += 1
         pass
-    #if they get the question wrong they get told they got it wrong 
+    #if they get the question wrong they get told they got it wrong and adds a point to the wrong
+
     elif q3 != answers[0]:
         easygui.msgbox("That was wrong")
         question3count += 1
@@ -142,6 +150,8 @@ while question4count != 3 or question4countright >= 1:
         score = str(score)
         easygui.msgbox("That was correct\n" + "Your score is now " + score + " out of 5")
         score = int(score)
+        #adds point to right count to exit while loop
+        
         question4countright += 1
 
         break
@@ -151,7 +161,8 @@ while question4count != 3 or question4countright >= 1:
         question4count += 1
         pass
     elif q4 != answers[2]:
-    #if they get the question wrong they get told they got it wrong 
+    #if they get the question wrong they get told they got it wrong and adds a point to the wrong
+    
         easygui.msgbox("That was wrong\n")
         question4count += 1
         pass
@@ -169,6 +180,8 @@ while question4count != 3 or question5countright >= 1:
             score += 1
         score = str(score)
         easygui.msgbox("That was correct\n" + "Your score is now " + score + " out of 5")
+        #adds point to right count to exit while loop
+        
         question5countright += 1
         score = int(score)
 
@@ -179,16 +192,20 @@ while question4count != 3 or question5countright >= 1:
         question5count += 1
         pass
     elif q5 != answers[0]:
-    #if they get the question wrong they get told they got it wrong 
+    #if they get the question wrong they get told they got it wrong and adds a point to the wrong
         easygui.msgbox("That was wrong\n")
         question5count += 1
         pass
 
+
+#run each question individually
 question1()
 question2()
 question3()
 question4()
 question5()
+
+
 score = str(score)
 easygui.msgbox(name + " Your score is " + score + " out of 5")
 

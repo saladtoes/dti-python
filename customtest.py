@@ -1,8 +1,11 @@
+#convert tuple to list 
 def convertTuple(tup):
     str = ''
     for item in tup:
         str = str + item
     return str
+
+
 #clears answers file 
 file = open("answers.py", 'w')
 file.close()
@@ -25,7 +28,7 @@ def questions1():
     q1asnwercount = int(input("Q1. How many answers do you want this question to have?\n Maximum of 5: "))
     questions = []
     q1Answers = []
-
+    
     if q1asnwercount == 1:
         q1 = input("enter question 1: ")
         questions.append(q1)
