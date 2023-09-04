@@ -8,7 +8,7 @@ def contains_number(string):
 while contains_number(name):
     easygui.msgbox("Your name can not contain a number")
     name = str(easygui.enterbox("What is your name?: "))
-    
+title = "CyberSmart Quiz"
 #asks age
 age = int(easygui.integerbox("Hello " + name + " how old are you?: "))
 
@@ -17,12 +17,10 @@ if age <= 7:
     easygui.msgbox("youre too young to do this quiz")
     quit()
 elif age >= 14:
-    easygui.msgbox("Your above the recommended age for this quiz.\nPlease try the Cybersmath Youth quiz instead")
+    easygui.msgbox("Your above the recommended age for this quiz.\nPlease try the CyberSmart Youth quiz instead")
     quit()
 else:
     easygui.msgbox("Hello " + name + " Welcome to the Cybersmart start quiz")
-    
-    
     
 global answers
 #lists of all quiz content
@@ -61,7 +59,7 @@ while question1count != 3 or question1countright >= 1:
 
         break
     #if they input anything else other than a, b or c they get an error message
-    elif contains_number(q1):
+    elif contains_number(q1) or q1 not in answers:
         easygui.msgbox("Invalid Input\n please enter only a, b, c")
         question1count += 1
         pass
@@ -94,7 +92,7 @@ while question2count != 3 or question2countright >= 1:
         score = int(score)
 
         break
-    elif contains_number(q2):
+    elif contains_number(q2) or q2 not in answers:
     #if they input anything else other than a, b or c they get an error message
         easygui.msgbox("Invalid Input\n please enter only a, b, c")
         question2count += 1
@@ -124,7 +122,7 @@ while question3count != 3 or question3countright >= 1:
         
         question3countright += 1
         break
-    elif contains_number(q3):
+    elif contains_number(q3) or q3 not in answers:
     #if they input anything else other than a, b or c they get an error message
         easygui.msgbox("Invalid Input\n please enter only a, b, c")
         question3count += 1
@@ -155,7 +153,7 @@ while question4count != 3 or question4countright >= 1:
         question4countright += 1
 
         break
-    elif contains_number(q4):
+    elif contains_number(q4) or q4 not in answers:
     #if they input anything else other than a, b or c they get an error message
         easygui.msgbox("Invalid Input\n please enter only a, b, c")
         question4count += 1
@@ -186,7 +184,7 @@ while question4count != 3 or question5countright >= 1:
         score = int(score)
 
         break
-    elif contains_number(q5):
+    elif contains_number(q5) or q5 not in answers:
     #if they input anything else other than a, b or c they get an error message
         easygui.msgbox("Invalid Input\n please enter only a, b, c")
         question5count += 1
