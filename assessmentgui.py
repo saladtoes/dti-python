@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import easygui
 #asks for name
 name = str(easygui.enterbox("What is your name?: "))
@@ -10,8 +11,16 @@ while contains_number(name):
     name = str(easygui.enterbox("What is your name?: "))
 title = "CyberSmart Quiz"
 #asks age
-age = int(easygui.integerbox("Hello " + name + " how old are you?: "))
-
+global age
+def agecheck():
+    global age
+    try:
+        age = int(easygui.enterbox("Hello " + name + " how old are you?: "))
+    except:
+        agecheck()
+    else:
+        pass
+agecheck()
 #checks if age is in required age and if not outputs error
 if age <= 7:
     easygui.msgbox("youre too young to do this quiz")
