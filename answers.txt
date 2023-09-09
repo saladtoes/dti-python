@@ -1,1 +1,0 @@
-q1AndAnswer1 = ['sDFWER', 'Sdfg', 'sdfwe', 'sdfdf']
