@@ -24,7 +24,7 @@ def questionsask():
         global score, questionrightcount, questionwrongcount, questionnum, questions, question5Answers, question4Answers, question3Answers, question2Answers, question1Answers, answers, questionsprint, questionAnswers, answer, done
         while questionwrongcount != 3 or questionrightcount != 1:
             question = easygui.enterbox(questionsprint + questionAnswers + "\nAnswer now: ")
-            if question.lower() == answer:
+            if question.lower() == answer or answer.lower():
                 if questionwrongcount == 0:
                     score += 1; pass
                 easygui.msgbox("that is correct\n" + "Your score is now" + str(score) + "out of 5")
