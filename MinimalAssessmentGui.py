@@ -8,7 +8,7 @@ def agecheck():
     except: agecheck()
     else: pass
 agecheck()
-if age > 14 or age < 8: easygui.msgbox("Youre either too old or too young to do this quiz\n You must be ages 8-13"); quit()
+if age >= 14 or age < 8: easygui.msgbox("Youre either too old or too young to do this quiz\n You must be ages 8-13"); quit()
 else: easygui.msgbox("Hello " + name + " Welcome to the Cybersmart start quiz")
 info, questionnum, score, done, questionsprint, questionAnswers, answer, answers = [" A: Delete the message and try to forget about it\n", "B: Keep the text and show an adult you trust\n", "C: Text the person back and say something mean to them", " A: Tweet that they are an idiot and a loser\n", "B: Ask your friends to grive the person a hard time\n", "C: Tell and adult you trust\n", " A: Nickname\n", "B: Your name\n", "C: Your email address\n", " A: Your video is rubbish\n", "B: Man, this is awful! Stick to playing spport or something.\n", "C: Congrats on your first video! Let me know if you'd like any help editing for your next video\n", ' A: “We shouldn’t be mean to them just because they’re mean to us."\n', 'B: “Yeah, totally. They’re evil and deserve it!”\n', 'C: “Yes, I think that is a great idea. Maybe they will understand what it feels like, and stop bullying us!”\n', "Someone sends you a text that is hurtful and makes you feel bad about yourself. What should you do?\n", "You find out that someone has posted an embarrassing picture of you online. What should you do?\n", "You want to join an online gaming site. Which of the following information is okay for you to post on the site.\n", "Someone in your class has posted their first video on YouTube and has asked you to comment on it. You don’t think the video is good because the editing is very choppy. What could you comment?\n", "Someone in your class is a real bully. Some of the other people in your class say: “Let’s get them back, and spam them with random texts.” What do you reply?\n", "a", "b", "c"], 0, 0, 0, "", "", 0, "a" + "b" + "c"
 def questionsask():
@@ -31,7 +31,6 @@ def questionsask():
                 questionrightcount += 1; pass
             elif contains_number(question) or question not in answers:
                 easygui.msgbox("Invalid Input\n please enter only a, b, c")
-                questionwrongcount += 1; pass
             elif question != answer: 
                 easygui.msgbox("That was wrong") 
                 questionwrongcount += 1; pass
